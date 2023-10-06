@@ -61,7 +61,7 @@ header > .interface {
 }
 
 header a {
-    color: rgb(65, 65, 65);
+    color: rgb(160, 157, 157);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
@@ -175,7 +175,7 @@ section.especialidades .flex{
     color: #00ff08;
 }
 
-/* CERTIFICADOS  */
+/* CERTIFICADOS */
 
 section.certificados{
     padding: 80px 4%;
@@ -202,7 +202,7 @@ section.certificados{
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.459);
 }
 
-/* ESTILO PORTIFOLIO */
+/* PORTIFOLIO */
 
 section.portifolio{
     padding: 50px 4%;
@@ -231,7 +231,6 @@ section.portifolio{
 .img-port{
     width: 400px;
     height: auto;
-    cursor: pointer;
     border-radius: 40px;
     
 }
@@ -267,6 +266,7 @@ section.portifolio{
     color: #00ff08;
     padding-bottom: 20px;
     padding-left: 10px;
+    cursor: pointer;
 
 }
 
@@ -356,3 +356,105 @@ footer .line-footer p a {
     color: #fff;
 }
 
+
+@media screen and (max-width: 1020px) {
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+        
+    }
+    /* CABEÇALHO */
+    .menu-desktop{
+        display: none;
+    }
+
+    .btn-contato{
+        text-align: center;
+    }
+
+
+    /* TOPO DO SITE */
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    /* ESPECIALIDADES */
+    section.especialidades {
+        padding: 40px 10%;   
+    }
+
+    .especialidades .especialidades-box {
+        color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 30px;
+        transition: .2s;
+        width: auto;
+        height: auto;
+        
+    }
+
+    /* CERTIFICADOS */
+    .certificados .flex img{
+        padding: auto;
+        width: 90%; /* Para garantir que as imagens ocupem a largura total da tela */
+        height: auto;
+        transition: .2s;
+    }
+    .certificados .flex img:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.459);
+    }
+   
+    .certificados .interface h2{
+        font-size: 35px;
+        margin-bottom: 20px;
+        
+    }
+
+    /* PROJETOS */
+
+    .portifolio .flex {
+        flex-wrap: wrap;
+    }
+    .portifolio .flex{
+        gap: 40px;
+    }
+    .img-port{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 40px;
+        
+    }
+    .img-port h5{
+        color: #00ff08;
+        font-size: 11px;
+    }
+
+    /* FOOTER */
+    footer .flex{
+        flex-direction: column;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+}
