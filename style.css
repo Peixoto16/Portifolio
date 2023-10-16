@@ -254,6 +254,129 @@ section.especialidades .flex{
     color: #00ff08;
 }
 
+/* HABILIDADES */
+.skills {
+    width: 900px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #000000;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.123);
+    color: #fff;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills ul li{
+    margin: 20px 0;
+}
+
+.skills .barras{
+    background-color: #fff;
+    display: block;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.barras > span {
+    height: 20px;
+    background: linear-gradient(to right, #3e9c42, #00ff08);
+    position: absolute;
+}
+
+.html {
+    width: 75%;
+    animation: html 3s;
+}
+
+.css {
+    width: 40%;
+    animation: css 3s;
+}
+
+.java{
+    width: 55%;
+    animation: java 3s;
+}
+.ingles{
+    width: 30%;
+    animation: ingles 3s;
+}
+.sql{
+    width: 38%;
+    animation: sql 3s;
+}
+.git{
+    width: 65%;
+    animation: git 3s;
+}
+.comu{
+    width: 92%;
+    animation: comu 3s;
+}
+
+
+@keyframes comu {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 92%;
+    }
+}
+@keyframes ingles {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes java {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+@keyframes sql {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 38%;
+    }
+}
+@keyframes git {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
 /* CERTIFICADOS */
 
 section.certificados{
