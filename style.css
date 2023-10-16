@@ -256,7 +256,7 @@ section.especialidades .flex{
 
 /* HABILIDADES */
 .skills {
-    width: 900px;
+    width: 70%;
     padding: 40px;
     border-radius: 20px;
     background-color: #000000;
@@ -608,6 +608,10 @@ footer .line-footer p a {
         
     }
 
+    /* HABILIDADES */
+    .skills {
+        width: 100%;
+    }
     /* CERTIFICADOS */
     .certificados .flex img{
         padding: auto;
