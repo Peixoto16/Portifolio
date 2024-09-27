@@ -374,30 +374,48 @@ section.especialidades .flex{
 
 /* CERTIFICADOS */
 
-section.certificados{
+section.certificados {
     padding: 70px 4%;
 }
 
-.certificados .interface h2{
+.certificados .interface h2 {
     font-size: 40px;
-    
-}
-.certificados .flex{
-    flex-wrap: wrap;
 }
 
-.certificados .flex img{
-    width: 30%; /* Para garantir que as imagens ocupem a largura total da tela */
+.certificados .flex {
+    display: flex; /* Usar flexbox para dispor as imagens em linha */
+    overflow-x: auto; /* Permitir rolagem horizontal */
+    scroll-snap-type: x mandatory; /* Para um efeito de "snap" ao rolar */
+}
+
+.certificados .flex img {
+    width: 34%; /* Para garantir que as imagens ocupem a largura total da tela */
     height: auto;
     margin: 20px;
     border-radius: 10px;
     transition: .2s;
+    scroll-snap-align: start; /* Faz com que as imagens se alinhem ao rolar */
 }
 
-.certificados .flex img:hover{
-    transform: scale(1.4);
+.certificados .flex img:hover {
+    transform: scale(1.1);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.459);
 }
+
+/* Adiciona um estilo para a barra de rolagem */
+.certificados .flex::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+}
+
+.certificados .flex::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5); /* Cor da barra */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.certificados .flex::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7); /* Cor da barra ao passar o mouse */
+}
+
 
 /* PORTIFOLIO */
 
